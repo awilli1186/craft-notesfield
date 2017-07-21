@@ -1,12 +1,12 @@
 # Craft Notes Field
 
-Add a notes throughout the CMS as fields.
+Add notes throughout the CMS as fields.
 
 ## Installation
 
 ### Step 1 - Upload the files
 
-Extract the Notes Field zip somewhere on your computer. Upload the 'notesfield' folder (inside the extracted .zip folder) to your ‘craft/plugins’ folder within your Craft CMS install.
+Extract the Notes Field zip somewhere on your computer. Upload the 'notesfield' folder (inside the extracted .zip folder) to your 'craft/plugins' folder within your Craft CMS install.
 
 ### Step 2 - Install the plugin
 
