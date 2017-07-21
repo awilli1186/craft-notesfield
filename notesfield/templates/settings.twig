@@ -1,0 +1,40 @@
+{% import '_includes/forms' as form %}
+
+{{ form.textareaField({
+	label: 'Notes'|t,
+	name: 'notes',
+	id: 'notes',
+	value: settings.notes
+}) }}
+
+{{ form.lightswitchField({
+	label: 'Hide Field Label'|t,
+	name: 'hideLabel',
+	id: 'hideLabel',
+	on: settings.hideLabel
+}) }}
+
+{{ form.selectField({
+	label: 'Type'|t,
+	name: 'type',
+	id: 'type',
+	options: [
+		{
+			label: 'Default',
+			value: ''
+		},
+		{
+			label: 'Instructions',
+			value: 'instructions'
+		},
+		{
+			label: 'Notice',
+			value: 'notice'
+		},
+		{
+			label: 'Warning',
+			value: 'warning'
+		},
+	],
+	value: settings.type
+}) }}

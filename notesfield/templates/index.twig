@@ -1,0 +1,17 @@
+{% set notes =  settings.notes %}
+{% set type = settings.type %}
+
+{% if notes %}
+	<div class="notes{{ type ? ' -' ~ type }}">
+		<p>{{ notes|t|raw }}</p>
+	</div>
+{% endif %}
+
+{% set jsSettings = {
+	id: id|namespaceInputId,
+	hideLabel: settings.hideLabel
+} %}
+
+{% includejs %}
+	new NotesField({{ jsSettings|json_encode|raw }});
+{% endincludejs %}
